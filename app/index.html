@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="number"],
+        select {
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Model Selection</h1>
+    <form action="/predict" method="post">
+        <label for="model">Select Model:</label>
+        <select name="model" id="model">
+            <option value="Angina">Angina</option>
+            <option value="Overwhight">Overwhight</option>
+            <option value="Diabetes">Diabetes</option>
+            <option value="High blood pressure">High blood pressure</option>
+        </select>
+        <br><br>
+        <label for="Alcohol">Alcohol:</label>
+        <input type="number" name="Alcohol" id="Alcohol" step="0.01"><br>
+        <label for="Moisture">Moisture:</label>
+        <input type="number" name="Moisture" id="Moisture" step="0.01"><br>
+        <label for="Vitamin B2">Vitamin B2:</label>
+        <input type="number" name="Vitamin B2" id="Vitamin B2" step="0.01"><br>
+        <label for="Grams">Grams:</label>
+        <input type="number" name="Grams" id="Grams" step="0.01"><br>
+        <label for="Otadecatrienoic">Octadecatrienoic:</label>
+        <input type="number" name="0ctadecatrienoic" id="0ctadecatrienoic" step="0.01"><br><br>
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
